@@ -1,0 +1,20 @@
+<h1> <%= @user.name %> </h1>
+
+<h2>Welcome to my page!</h2>
+<p>Here are my posts:</p>
+<table>
+
+  <% @user.post.each do |post| %>
+  <tbody>
+
+  <tr>
+
+
+  <td><%= link_to "#{post.title}", title %></td>
+  <% end %>
+
+
+</tr>
+
+</tbody>
+</table>
